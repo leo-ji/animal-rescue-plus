@@ -68,9 +68,19 @@
     flex-direction: column;
     justify-content: center;*/
 }
+.backarrow{
+  height: 50px;
+  width: auto;
+  -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ margin: 20px;
+}
 h1.title{
   font-size: 50px;
   padding-left: 50px;
+}
+h2{
+  font-size: 35px;
 }
 
 .pictures{
@@ -92,12 +102,20 @@ h1.title{
 }
 .phone-num{
   text-align: center;
+  margin-bottom: 90px;
+  margin-top:70px;
+
+}
+.emergency{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
 }
 .phone{
   height: 50px;
   width: auto;
-  position:absolute;
-
+  margin-right: 10px;
 }
 .phone-no{
   text-decoration: underline;
@@ -111,14 +129,26 @@ h1.title{
   border-style: solid;
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:80px;
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+
 }
 .icon{
-  height:100px;
+  height:150px;
   width: auto;
 }
 .arrow{
   height: 50px;
   width: auto;
   margin-left: 100px;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit;
 }
