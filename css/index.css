@@ -12,10 +12,11 @@
     display: flex;
     width: 100%;
     height: auto;
-    flex-grow: 1;
+    justify-content: space-between;
 }
 .animal-types-child{
-    width: 33%;
+    width: 30%;
     min-width: 120px;
     max-width: 33%;
+    flex: none;
 }
