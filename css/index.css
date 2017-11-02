@@ -2,3 +2,8 @@
     width: 100%;
     position: relative;
 }
+
+.location{
+    font-size: 0.5em;
+    color: #555;
+}
