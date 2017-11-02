@@ -16,7 +16,5 @@
 }
 .animal-types-child{
     width: 30%;
-    min-width: 120px;
-    max-width: 33%;
     flex: none;
 }
