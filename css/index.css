@@ -8,14 +8,21 @@
     color: #555;
 }
 
-.animal-types-parent{
-    display: flex;
-    width: 90%;
-    height: auto;
-    justify-content: space-between;
-    flex-flow: nowrap;
+
+.pictures{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
 }
-.animal-types-child{
-    width: 30%;
-    flex: none;
+.picture-wrapper{
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+}
+.pic{
+  width: auto;
+  height: 130px;
 }
