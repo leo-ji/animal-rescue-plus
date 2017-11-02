@@ -10,9 +10,10 @@
 
 .animal-types-parent{
     display: flex;
-    width: 100%;
+    width: 90%;
     height: auto;
     justify-content: space-between;
+    flex-flow: nowrap;
 }
 .animal-types-child{
     width: 30%;
