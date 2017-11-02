@@ -7,3 +7,15 @@
     font-size: 0.5em;
     color: #555;
 }
+
+.animal-types-parent{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+.animal-types-child{
+    width: 33%;
+    min-width: 120px;
+    max-width: 33%;
+}
