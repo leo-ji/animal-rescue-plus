@@ -1,0 +1,49 @@
+.identify-header{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: lightblue;
+    margin-top: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.help-me-identify{
+  font-size: 300%;
+  text-align: center;
+
+}
+
+.picture{
+    border: 2px solid gray;
+    width: 100%;
+    margin: 5px;
+    font-size: 250%;
+}
+
+.pic{
+  width: auto;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.button-wrapper{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  vertical-align: top;
+  /*border: 1px solid black;*/
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.animal-button{
+  width: 50%;
+  height: 300px;
+  border: 1px solid black;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 300%;
+  font-weight: bold;
+
+}
