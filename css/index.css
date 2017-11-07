@@ -1,15 +1,16 @@
-
-
 section {
     height: 200px;
     border-top: 2px gray dotted;
     vertical-align: middle;
 }
 
+.search{
+    padding-top: 50px;
+}
+
 .search .search-input-group {
     width: 100%;
     height: 100px;
-    margin-top: 50px;
 }
 
 .search .search-input{
