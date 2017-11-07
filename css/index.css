@@ -29,12 +29,14 @@ section {
 
 
 
-
-
-
 .location{
-    font-size: 2em;
+    font-size: 1.8em;
     color: #555;
+}
+.location-name{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: lightgray;
 }
 
 .picture-wrapper{

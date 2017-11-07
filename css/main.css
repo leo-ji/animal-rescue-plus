@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
     border: 5px solid gray;
     border-radius: 50%;
     margin: auto;
-    margin-top: 30px;
+    margin-bottom: 100px;
     background-color: #ededed;
 }
 
@@ -77,8 +77,13 @@ h1,h2,h3,h4,h5,h6{
 .screen header{
     text-align: center;
     height: 80px;
-    background: black;
-    color: #aaa;
+    background: #999;
+    color: #111;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 16px;
+    width: 100%;
+    position: relative;
 }
 
 .backarrow{
@@ -86,7 +91,9 @@ h1,h2,h3,h4,h5,h6{
   width: auto;
   -webkit-transform: scaleX(-1);
  transform: scaleX(-1);
- margin: 20px;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 25px);
 }
 
 h1.title{
@@ -96,4 +103,10 @@ h1.title{
 
 h2{
   font-size: 35px;
+}
+
+h2.page-title{
+    clear: both;
+    padding-top: 30px;
+    font-weight: 700;
 }
