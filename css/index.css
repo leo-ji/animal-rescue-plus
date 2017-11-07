@@ -16,6 +16,8 @@ section {
 .search .search-input{
     height: 100px;
     width: 100%;
+    background-color: rgb(174,216,229);
+    font-size: 200%;
 }
 
 
@@ -25,7 +27,8 @@ section {
     border-radius: 5px;
     background-color: lightblue;
     margin-top: 25px;
-    font-size: 300%;
+    font-size: 200%;
+    color: #777;
 }
 
 
