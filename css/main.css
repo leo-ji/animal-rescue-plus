@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i');
+
+
 .device-wrapper{
     border: 1px solid black;
     border-radius: 100px;
@@ -7,6 +10,11 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'PT Serif', serif;
 }
 
 
@@ -63,7 +71,14 @@
     margin: auto;
     width: 750px;
     height: 1334px;
-    background-color: white;
+    background: white;
+}
+
+.screen header{
+    text-align: center;
+    height: 80px;
+    background: black;
+    color: #aaa;
 }
 
 .backarrow{
