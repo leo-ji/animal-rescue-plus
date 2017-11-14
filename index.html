@@ -139,10 +139,10 @@
             addressLookup: true,    // requires Google API key if true
             map: "map"
         };
-        geolocator.locate(options, function (err, location) {
+        geolocator.locate(options, function (err, loc) {
             if (err) return console.log(err);
             
-        document.getElementById("location-name").innerHTML = location.address.city;
+        document.getElementById("location-name").innerHTML = loc.address.city;
         });
     };
     </script>
