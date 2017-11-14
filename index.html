@@ -137,7 +137,7 @@
             desiredAccuracy: 30,    // meters
             fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
             addressLookup: true,    // requires Google API key if true
-            map: "#map"
+            map: "map"
         };
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
