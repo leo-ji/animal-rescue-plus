@@ -142,7 +142,8 @@
         };
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
-            document.getElementById("location-name").innerHTML = location;
+            
+            document.getElementById("location-name").innerHTML = location.Address.commonName;
         });
     };
     </script>
