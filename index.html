@@ -127,7 +127,7 @@
     <script>
     
             
-            window.onload = function () {
+    window.onload = function () {
         var options = {
             enableHighAccuracy: true,
             timeout: 5000,
@@ -136,14 +136,12 @@
             desiredAccuracy: 30,    // meters
             fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
             addressLookup: true,    // requires Google API key if true
-            timezone: true,         // requires Google API key if true
-            map: "map-canvas",      // interactive map element id (or options object)
-            staticMap: true         // map image URL (boolean or options object)
+            map: "#map-canvas"
         };
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
             
-            document.getElementById("location-name").innerHTML = location.Address.commonName;
+        document.getElementById("location-name").innerHTML = location.Address.commonName;
         });
     };
     </script>
