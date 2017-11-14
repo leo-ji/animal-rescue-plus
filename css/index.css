@@ -20,6 +20,10 @@ section {
     font-size: 200%;
 }
 
+.search .input-group-addon {
+    width: 80px;
+}
+
 
 .help-me-identify{
     width: 100%;
