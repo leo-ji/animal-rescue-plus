@@ -37,6 +37,17 @@
 
         <script src="https://use.fontawesome.com/0067fccea5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.1/geolocator.js"></script>
+        
+        <script type="text/javascript">
+            
+        geolocator.config({
+        language: "en",
+        google: {
+            version: "3",
+            key: "AIzaSyA0B1w88A9cR89iVlXxbQFc9We4FPFgphk"
+        }
+    });
+        </script>
 
 
 <!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
@@ -80,7 +91,7 @@
 
 
                     <section class="pictures">
-                        <div class="location"><p>Common in <span class="location-name">Evanston, IL</span></p></div>
+                        <div class="location"><p>Common in <span class="location-name" id="location-name">Evanston, IL</span></p></div>
                         <div class="picture-wrapper">
 
 
@@ -113,5 +124,27 @@
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    
+            
+            window.onload = function () {
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumWait: 10000,     // max wait time for desired accuracy
+            maximumAge: 0,          // disable cache
+            desiredAccuracy: 30,    // meters
+            fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
+            addressLookup: true,    // requires Google API key if true
+            timezone: true,         // requires Google API key if true
+            map: "map-canvas",      // interactive map element id (or options object)
+            staticMap: true         // map image URL (boolean or options object)
+        };
+        geolocator.locate(options, function (err, location) {
+            if (err) return console.log(err);
+            document.getElementById("location-name").innerHTML = location;
+        });
+    };
+    </script>
     </body>
 </html>
