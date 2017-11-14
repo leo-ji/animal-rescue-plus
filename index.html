@@ -37,9 +37,9 @@
 
         <script src="https://use.fontawesome.com/0067fccea5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.1/geolocator.js"></script>
-        
+
         <script type="text/javascript">
-            
+
         geolocator.config({
         language: "en",
         google: {
@@ -111,11 +111,26 @@
                         Skunk
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
+										<a href="squirrel.html" class="picture type1">
+                      <img src="./assets/possum.jpg" class="pic">
+                        Possum
+                            <img class="arrow-right" src="assets/arrowright.png" />
+                    </a>
+										<a href="squirrel.html" class="picture type2">
+											<img src="./assets/coyote.jpg" class="pic">
+												Coyote
+														<img class="arrow-right" src="assets/arrowright.png" />
+										</a>
+										<a href="squirrel.html" class="picture type3">
+											<img src="./assets/fox.jpg" class="pic">
+												Fox
+														<img class="arrow-right" src="assets/arrowright.png" />
+										</a>
                     <a href="squirrel.html" class="picture type1">
                       <img src="./assets/mallard1.jpg" class="pic">
                         Mallard
                             <img class="arrow-right" src="assets/arrowright.png" />
-                    </a> 
+                    </a>
                 <a href="squirrel.html" class="picture type2">
                       <img src="./assets/mallard2.jpg" class="pic">
                         Phoenix
@@ -126,7 +141,7 @@
                         Baby Squirrel
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-                            
+
                         </div>
 
                   </div>
@@ -142,8 +157,8 @@
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
-    
-            
+
+
     window.onload = function () {
         var options = {
             enableHighAccuracy: true,
@@ -157,11 +172,11 @@
         };
         geolocator.locate(options, function (err, loc) {
             if (err) return console.log(err);
-            
+
         document.getElementById("location-name").innerHTML = loc.address.city;
 
             $('.type1').addClass('hide');
-            
+
         });
     };
     </script>
