@@ -159,9 +159,9 @@
             if (err) return console.log(err);
             
         document.getElementById("location-name").innerHTML = loc.address.city;
-            document.getElementsByClassName("type1").forEach(function(element){
-                element.addClass("hide");
-            });
+
+            $('.type1').addClass('hide');
+            
         });
     };
     </script>
