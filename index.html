@@ -96,19 +96,29 @@
                         <div class="picture-wrapper">
 
 
-                    <a href="squirrel.html" class="picture">
+                    <a href="squirrel.html" class="picture type1">
                       <img src="./assets/squirrel1.jpg" class="pic">
                         Squirrel
                         <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-                    <a href="squirrel.html" class="picture">
+                    <a href="squirrel.html" class="picture type2">
                       <img src="./assets/rabbit1.jpg" class="pic">
                         Rabbit
                         <img class="arrow-right" src="assets/arrowright.png" />
-                        </a>
-                        <a href="squirrel.html" class="picture">
+                    </a>
+                    <a href="squirrel.html" class="picture type3">
                       <img src="./assets/skunk.jpg" class="pic">
                         Skunk
+                            <img class="arrow-right" src="assets/arrowright.png" />
+                    </a>
+                    <a href="squirrel.html" class="picture type1">
+                      <img src="./assets/mallard1.jpg" class="pic">
+                        Mallard
+                            <img class="arrow-right" src="assets/arrowright.png" />
+                    </a> 
+                <a href="squirrel.html" class="picture type2">
+                      <img src="./assets/mallard2.jpg" class="pic">
+                        Phoenix
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
                         </div>
@@ -143,6 +153,9 @@
             if (err) return console.log(err);
             
         document.getElementById("location-name").innerHTML = loc.address.city;
+            document.getElementsByClassName("type1").forEach(function(element){
+                element.addClass("hide");
+            });
         });
     };
     </script>

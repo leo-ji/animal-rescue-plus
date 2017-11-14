@@ -68,9 +68,14 @@ section {
     padding: 5px 0;
     font-size: 250%;
     position: relative;
+    transition: 1s ease-in-out;
 }
 .picture:hover{
     text-decoration: none;
+}
+
+.picture.hide{
+    display: none;
 }
 
 .arrow-right{
