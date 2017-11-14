@@ -92,6 +92,7 @@
 
                     <section class="pictures">
                         <div class="location"><p>Common in <span class="location-name" id="location-name">Evanston, IL</span></p></div>
+                        <div id="map"></div>
                         <div class="picture-wrapper">
 
 
@@ -136,7 +137,7 @@
             desiredAccuracy: 30,    // meters
             fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
             addressLookup: true,    // requires Google API key if true
-            map: "#map-canvas"
+            map: "#map"
         };
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
