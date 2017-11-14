@@ -142,7 +142,7 @@
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
             
-        document.getElementById("location-name").innerHTML = location.Address.city;
+        document.getElementById("location-name").innerHTML = location.address.city;
         });
     };
     </script>
