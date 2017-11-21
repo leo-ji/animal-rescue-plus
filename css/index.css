@@ -34,12 +34,15 @@ section {
     font-size: 200%;
     color: #777;
 }
-
-
-
 .location{
     font-size: 1.8em;
     color: #555;
+    border-style: solid;
+   border-width: thin;
+   flex:1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .location-name{
     text-decoration: underline;
@@ -71,6 +74,10 @@ section {
     position: relative;
     transition: visibility 0s linear 0.5s,opacity 0.5s linear,height 0.5s ease-in-out;
     height: 250px;
+    display: flex;
+    flex:1;
+    align-items: center;
+
 }
 .picture:hover{
     text-decoration: none;
@@ -92,4 +99,10 @@ section {
 
 .pic{
   width: 300px;
+  padding-right: 20px;
+}
+.list-item{
+  align-items: center;
+  justify-content: center;
+  flex:1;
 }
