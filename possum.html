@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<!-- Mobile Stuff -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,30 +29,18 @@
 
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<title>Homepage | Animal Rescue Plus</title>
+	<title>Mallard | Animal Rescue Plus</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 	<script src="https://use.fontawesome.com/0067fccea5.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.1/geolocator.js"></script>
-
-	<script type="text/javascript">
-		geolocator.config({
-			language: "en",
-			google: {
-				version: "3",
-				key: "AIzaSyA0B1w88A9cR89iVlXxbQFc9We4FPFgphk"
-			}
-		});
-	</script>
-
 
 	<!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
-
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
-	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link href="css/squirrel.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -71,55 +58,47 @@
 				<div class="screen container">
 					<header>
 						<h1 class="brand-name">Animal Rescue Plus</h1>
+						<nav>
+							<a href="./index.html">
+                    <img src="./assets/arrowright.png" class="backarrow">
+                  </a>
+						</nav>
 					</header>
 
-					<section class="search search-input-group">
-						<form class="input-group" action="mallard.html">
-							<input type="text" aria-label="Search for anything" placeholder="Search for anything" class="search-input">
-							<span class="input-group-addon" onclick="location.href='mallard.html';"><i class="fa fa-search" aria-hidden="true"></i>
-									</span></input>
-						</form>
-					</section>
-
-					<div class="location">
-						<p>Common in <span class="location-name" id="location-name">Evanston, IL...</span></p>
+					<h2 class="page-title">Opossum</h2>
+					<div class="pictures">
+						<div class="picture-wrapper">
+							<img src="./assets/possum.jpg" class="pic">
+						</div>
+						<div class="picture-wrapper">
+							<img src="./assets/possum1.jpg" class="pic">
+						</div>
 					</div>
-					<div class="picture-wrapper">
-
-
-						<a href="squirrel.html" class="picture type3">
-              <img src="./assets/squirrel1.jpg" class="pic">
-                Squirrel
-                <img class="arrow-right" src="assets/arrowright.png" />
-            </a>
-						<a href="rabbit.html" class="picture type2">
-                <img src="./assets/rabbit1.jpg" class="pic">
-                  Rabbit
-              	<img class="arrow-right" src="assets/arrowright.png" />
-              </a>
-						<a href="mallard.html" class="picture type1">
-			        <img src="./assets/mallard1.jpg" class="pic">
-			          Mallard
-			        <img class="arrow-right" src="assets/arrowright.png" />
-			      </a>
-						<a href="possum.html" class="picture type1">
-              <img src="./assets/possum.jpg" class="pic">
-                Opossum
-              <img class="arrow-right" src="assets/arrowright.png" />
-            </a>
+					<div class="phone-num">
+						<h2>In any case of injury, call a professional.</h2>
+						<div class=emergency onclick="location.href='call.html'">
+							<img src="./assets/phone.png" class="phone">
+							<h2 class="phone-no">(847) 491-4357</h2>
+						</div>
+						<p>Chicago Opossum MD</p>
 					</div>
+					<div class="info-box">
+						<h2 style="padding:30px">What to watch out for:</h2>
+						<ul>
+							<li>Possums like to play dead. It might just be pretending.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+							<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 
+						</ul>
+					</div>
+					<!--screen container closing tag-->
 				</div>
+
 				<div class="button">
 					<!-- You can hook the "home button" to some JavaScript events or just remove it -->
 				</div>
-			</div>
-		</div>
-	</div>
 
-
-	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+				<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </body>
 
 </html>
