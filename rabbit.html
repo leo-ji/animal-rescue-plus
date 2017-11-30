@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8">
 
-        <!-- Mobile Stuff -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="msapplication-tap-highlight" content="no">
+<head>
+	<meta charset="utf-8">
 
-        <!-- Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="application-name" content="CHANGE-ME">
-        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+	<!-- Mobile Stuff -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
 
-        <!-- Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="CHANGE-ME">
-        <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+	<!-- Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="CHANGE-ME">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
 
-        <!-- Windows 8 -->
-        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
+	<!-- Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+	<!-- Windows 8 -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
 
 
-        <meta name="theme-color" content="#000000">
+	<meta name="theme-color" content="#000000">
 
-        <link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 
-        <title>Mallard | Animal Rescue Plus</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<title>Mallard | Animal Rescue Plus</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-        <script src="https://use.fontawesome.com/0067fccea5.js"></script>
+	<script src="https://use.fontawesome.com/0067fccea5.js"></script>
 
-<!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link href="css/squirrel.css" rel="stylesheet" type="text/css"/>
+	<!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/squirrel.css" rel="stylesheet" type="text/css" />
 
-    </head>
+</head>
 
-    <body>
-        <div class="everything">
-            <div class="device-wrapper">
-              <div class="device" data-device="iPhone7" data-orientation="portrait" data-color="gold">
-                <div class="cam-mic-ir">
-                  <div class="cam">
-                    </div>
-                  <div class="mic">
-                    </div>
-                  <div class="ir"></div></div>
-                <div class="screen container">
-                    <header><h1 class="brand-name">Animal Rescue Plus</h1>
-                <nav>
-                  <a href="./index.html">
+<body>
+	<div class="everything">
+		<div class="device-wrapper">
+			<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="gold">
+				<div class="cam-mic-ir">
+					<div class="cam">
+					</div>
+					<div class="mic">
+					</div>
+					<div class="ir"></div>
+				</div>
+				<div class="screen container">
+					<header>
+						<h1 class="brand-name">Animal Rescue Plus</h1>
+						<nav>
+							<a href="./index.html">
                     <img src="./assets/arrowright.png" class="backarrow">
                   </a>
-                </nav>
-                    </header>
+						</nav>
+					</header>
 
-                	<h2 class="page-title">Rabbit</h2>
-                    <div class="pictures">
-                      <div class="picture-wrapper">
-                        <img src="./assets/rabbit.jpg" class="pic">
-                      </div>
-                      <div class="picture-wrapper">
-                        <img src="./assets/rabbit1.jpg" class="pic">
-                      </div>
-                    </div>
-                    <div class="phone-num">
-                      <h2>In any case of injury, call a professional.</h2>
-                      <div class=emergency onclick="location.href='call.html'">
-                        <img src="./assets/phone.png" class="phone">
-                        <h2 class="phone-no">(847) 491-4357</h2>
-                      </div>
-                      <p>Chicago Rabbit MD</p>
-                    </div>
-										<div class="info-box">
-											<h2 style="padding:30px">What to watch out for:</h2>
-											<ul>
-                        <li>If the wing is sagging, it's most likely broken. Call
-                          a professional for help. </li>
-											 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-													sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
-												<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-													nisi ut aliquip ex ea commodo consequat.</li>
+					<h2 class="page-title">Rabbit</h2>
+					<div class="pictures">
+						<div class="picture-wrapper">
+							<img src="./assets/rabbit.jpg" class="pic">
+						</div>
+						<div class="picture-wrapper">
+							<img src="./assets/rabbit1.jpg" class="pic">
+						</div>
+					</div>
+					<div class="phone-num">
+						<h2>In any case of injury, call a professional.</h2>
+						<div class=emergency onclick="location.href='call.html'">
+							<img src="./assets/phone.png" class="phone">
+							<h2 class="phone-no">(847) 491-4357</h2>
+						</div>
+						<p>Chicago Rabbit MD</p>
+					</div>
+					<div class="info-box">
+						<h2 style="padding:30px">What to watch out for:</h2>
+						<ul>
+							<li>If the wing is sagging, it's most likely broken. Call a professional for help. </li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+							<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 
-											</ul>
-										</div>
-									<!--screen container closing tag-->
-								  </div>
+						</ul>
+					</div>
+					<!--screen container closing tag-->
+				</div>
 
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
+				<div class="button">
+					<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+				</div>
 
-                <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-            </body>
-        </html>
+				<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+
+</html>

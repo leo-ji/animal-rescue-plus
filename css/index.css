@@ -1,7 +1,9 @@
-section {
-  height: 200px;
-  border-top: 2px gray dotted;
-  vertical-align: middle;
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.brand-name{
+  font-family: 'Roboto', sans-serif;
 }
 
 .search {
