@@ -82,7 +82,7 @@
 										</section>
 
                     <section class="pictures">
-                        <div class="location"><p>Common in <span class="location-name" id="location-name">your area</span></p>
+                        <div class="location"><p>Common in <span class="location-name" id="location-name">Evanston, IL</span></p>
 <!--                            We need to have a location change dropdown for different levels-->
                         </div>
                         <div id="map"></div>
@@ -133,16 +133,11 @@
                         Phoenix
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-              
+
 
                         </div>
 
                   </section>
-
-
-
-
-
 
                 </div>
                 <div class="button">
@@ -155,29 +150,5 @@
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-
-
-    window.onload = function () {
-        var options = {
-            enableHighAccuracy: true,
-            timeout: 5000,
-            maximumWait: 5000,     // max wait time for desired accuracy
-            maximumAge: 0,          // disable cache
-            desiredAccuracy: 30,    // meters
-            fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
-            addressLookup: true,    // requires Google API key if true
-            map: "map"
-        };
-        geolocator.locate(options, function (err, loc) {
-            if (err) return console.log(err);
-
-        document.getElementById("location-name").innerHTML = loc.address.city;
-
-            $('.type1').addClass('hide');
-
-        });
-    };
-    </script>
     </body>
 </html>
