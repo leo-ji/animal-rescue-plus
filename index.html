@@ -1,154 +1,134 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8">
 
-        <!-- Mobile Stuff -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="msapplication-tap-highlight" content="no">
+<head>
+	<meta charset="utf-8">
 
-        <!-- Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="application-name" content="CHANGE-ME">
-        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+	<!-- Mobile Stuff -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
 
-        <!-- Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="CHANGE-ME">
-        <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+	<!-- Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="CHANGE-ME">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
 
-        <!-- Windows 8 -->
-        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
+	<!-- Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-
-        <meta name="theme-color" content="#000000">
-
-        <link rel="shortcut icon" href="favicon.ico">
-
-        <title>Homepage | Animal Rescue Plus</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-        <script src="https://use.fontawesome.com/0067fccea5.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.1/geolocator.js"></script>
-
-        <script type="text/javascript">
-
-        geolocator.config({
-        language: "en",
-        google: {
-            version: "3",
-            key: "AIzaSyA0B1w88A9cR89iVlXxbQFc9We4FPFgphk"
-        }
-    });
-        </script>
+	<!-- Windows 8 -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
 
 
-<!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
+	<meta name="theme-color" content="#000000">
 
-        <link href="css/main.css" rel="stylesheet" type="text/css"/>
-        <link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
 
-    </head>
+	<title>Homepage | Animal Rescue Plus</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <body>
-        <div class="everything">
-            <div class="device-wrapper">
-              <div class="device" data-device="iPhone7" data-orientation="portrait" data-color="gold">
-                <div class="cam-mic-ir">
-                  <div class="cam">
-                    </div>
-                  <div class="mic">
-                    </div>
-                  <div class="ir"></div></div>
-                <div class="screen container">
-                    <header><h1 class="brand-name">Animal Rescue Plus</h1></header>
+	<script src="https://use.fontawesome.com/0067fccea5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.1/geolocator.js"></script>
+
+	<script type="text/javascript">
+		geolocator.config({
+			language: "en",
+			google: {
+				version: "3",
+				key: "AIzaSyA0B1w88A9cR89iVlXxbQFc9We4FPFgphk"
+			}
+		});
+	</script>
 
 
-										<section class="search search-input-group">
-										<form class="input-group" action="mallard.html">
-									<input type="text" aria-label="Search for anything" placeholder="Search for anything" class="search-input">
-									<span class="input-group-addon" onclick="location.href='mallard.html';"><i class="fa fa-search" aria-hidden="true"></i>
+	<!--        <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet" type="text/css">-->
+
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div class="everything">
+		<div class="device-wrapper">
+			<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="gold">
+				<div class="cam-mic-ir">
+					<div class="cam">
+					</div>
+					<div class="mic">
+					</div>
+					<div class="ir"></div>
+				</div>
+				<div class="screen container">
+					<header>
+						<h1 class="brand-name">Animal Rescue Plus</h1></header>
+
+
+					<section class="search search-input-group">
+						<form class="input-group" action="mallard.html">
+							<input type="text" aria-label="Search for anything" placeholder="Search for anything" class="search-input">
+							<span class="input-group-addon" onclick="location.href='mallard.html';"><i class="fa fa-search" aria-hidden="true"></i>
 									</span></input>
 
-												</form>
+						</form>
 
-										</section>
+					</section>
 
-                    <section class="pictures">
-                        <div class="location"><p>Common in <span class="location-name" id="location-name">Evanston, IL</span></p>
-<!--                            We need to have a location change dropdown for different levels-->
-                        </div>
-                        <div id="map"></div>
-                        <div class="picture-wrapper">
+					<section class="pictures">
+						<div class="location">
+							<p>Common in <span class="location-name" id="location-name">Evanston, IL</span></p>
+							<!--                            We need to have a location change dropdown for different levels-->
+						</div>
+						<div id="map"></div>
+						<div class="picture-wrapper">
 
 
-                    <a href="squirrel.html" class="picture type3">
+							<a href="squirrel.html" class="picture type3">
                       <img src="./assets/squirrel1.jpg" class="pic">
                         Squirrel
                         <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-                    <a href="squirrel.html" class="picture type2">
+							<a href="squirrel.html" class="picture type2">
                       <img src="./assets/rabbit1.jpg" class="pic">
                         Rabbit
                         <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-                    <a href="squirrel.html" class="picture type3">
-											<div class="list-item">
-
-                      <img src="./assets/skunk.jpg" class="pic">
-                        Skunk
-                            <img class="arrow-right" src="assets/arrowright.png" />
-													</div>
+							<a href="squirrel.html" class="picture type3">
                     </a>
-										<a href="squirrel.html" class="picture type1">
+							<a href="squirrel.html" class="picture type1">
                       <img src="./assets/possum.jpg" class="pic">
                         Possum
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-										<a href="squirrel.html" class="picture type2">
-											<img src="./assets/coyote.jpg" class="pic">
-												Coyote
-														<img class="arrow-right" src="assets/arrowright.png" />
-										</a>
-										<a href="squirrel.html" class="picture type3">
-											<img src="./assets/fox.jpg" class="pic">
-												Fox
-														<img class="arrow-right" src="assets/arrowright.png" />
-
-										</a>
-                    <a href="mallard.html" class="picture type1">
+							<a href="mallard.html" class="picture type1">
                       <img src="./assets/mallard1.jpg" class="pic">
                         Mallard
                             <img class="arrow-right" src="assets/arrowright.png" />
                     </a>
-                <a href="squirrel.html" class="picture type2">
-                      <img src="./assets/mallard2.jpg" class="pic">
-                        Phoenix
-                            <img class="arrow-right" src="assets/arrowright.png" />
-                    </a>
+						</div>
+
+					</section>
+
+				</div>
+				<div class="button">
+					<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-                        </div>
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
 
-                  </section>
-
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-        </div>
-
-
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    </body>
 </html>
