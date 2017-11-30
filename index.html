@@ -75,7 +75,7 @@
 
 					<div class="shim">
 						<section class="search search-input-group">
-							<form class="input-group">
+							<form class="input-group" id="searchForm" onsubmit="return false">
 								<input type="text" id="searchInput" aria-label="Search animals..." placeholder="Search animals..." class="search-input">
 								<span class="input-group-addon" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i>
 										</span></input>
@@ -133,19 +133,26 @@
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script>
-		function search(){
+		function search() {
 			var animals = ["mallard", "rabbit", "squirrel", "opossum"];
 			animal = document.getElementById("searchInput").value;
 			console.log(animal);
 			var strInArray = (animals.indexOf(animal) > -1);
-			if(strInArray){
+			if (strInArray) {
 				window.location.href = "https://leo-ji.github.io/animal-rescue-plus/" + animal + ".html";
-			}else{
+			} else {
 				alert("Animal not found, let's try to ID it!")
 				window.location.href = "https://leo-ji.github.io/animal-rescue-plus/animalselect.html"
 			}
 		}
-
+	</script>
+	<script>
+		var elem = document.getElementById("searchForm");
+		document.getElementById("searchInput").onkeyup = function(e) {
+			if (e.keyCode == 13) {
+				search();
+			}
+		};
 	</script>
 </body>
 
