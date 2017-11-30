@@ -1,112 +1,123 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i');
-
-
-.device-wrapper{
-    border: 1px solid black;
-    border-radius: 100px;
-    width: 830px;
-    height: 1675px;
-    padding-top: 75px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
+.device-wrapper {
+  border: 1px solid black;
+  border-radius: 100px;
+  width: 830px;
+  height: 1675px;
+  padding-top: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
-
-.button{
-    width: 120px;
-    height: 120px;
-    border: 5px solid gray;
-    border-radius: 50%;
-    margin: auto;
-    margin-bottom: 100px;
-    background-color: #ededed;
+.container {
+  padding-left: 1px;
+  padding-right: 2px;
 }
 
-.cam-mic-ir{
-    width: 70px;
-    height: 20px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 50px;
-    position: relative;
-    vertical-align: middle;
-}
-.cam{
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    left: -40px;
+.shim {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.mic{
-    width: 100px;
-    height: 10px;
-    margin: auto;
-    background-color: black;
-    top: 5px;
-    position: absolute;
+.brand-name{
+  color: white;
 }
 
-.ir{
-    width: 10px;
-    height: 10px;
-    background-color: #222;
-    border-radius: 50%;
-    margin: auto;
-    position: absolute;
-    top: -30px;
-    left: 40px;
+.button {
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #ededed;
 }
 
-.screen{
-    border: 1px solid gray;
-    margin: auto;
-    width: 750px;
-    height: 1334px;
-    background: white;
+.cam-mic-ir {
+  width: 70px;
+  height: 20px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+  position: relative;
+  vertical-align: middle;
 }
 
-.screen header{
-    text-align: center;
-    height: 80px;
-    background: #999;
-    color: #111;
-    font-size: 36px;
-    font-weight: bold;
-    padding-top: 16px;
-    width: 100%;
-    position: relative;
+.cam {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
 }
 
-.backarrow{
+.mic {
+  width: 100px;
+  height: 10px;
+  margin: auto;
+  background-color: black;
+  top: 5px;
+  position: absolute;
+}
+
+.ir {
+  width: 10px;
+  height: 10px;
+  background-color: #222;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: -30px;
+  left: 40px;
+}
+
+.screen {
+  border: 1px solid gray;
+  margin: auto;
+  width: 750px;
+  height: 1334px;
+  background: white;
+}
+
+.screen header {
+  text-align: center;
+  height: 80px;
+  background: tomato;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.backarrow {
   height: 50px;
   width: auto;
   -webkit-transform: scaleX(-1);
- transform: scaleX(-1);
-    position: absolute;
-    left: 20px;
-    top: calc(50% - 25px);
+  transform: scaleX(-1);
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 25px);
 }
 
-h1.title{
+h1.title {
   font-size: 50px;
   padding-left: 50px;
 }
 
-h2{
+h2 {
   font-size: 35px;
 }
 
-h2.page-title{
-    clear: both;
-    padding-top: 30px;
-    font-weight: 700;
+h2.page-title {
+  clear: both;
+  padding-top: 30px;
+  font-weight: 700;
 }

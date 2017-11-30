@@ -3,6 +3,20 @@
   height: 125px;
 }
 
+.container{
+  padding-left: 1px;
+  padding-right: 2px;
+}
+
+.shim{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.brand-name{
+  color: white;
+}
+
 .search .search-input-group {
   width: 100%;
   height: 100px;
@@ -11,8 +25,8 @@
 .search .search-input {
   height: 100px;
   width: 100%;
-  background-color: rgb(174, 216, 229);
   font-size: 200%;
+  padding-left: 20px;
 }
 
 .search .input-group-addon {
